@@ -1,0 +1,16 @@
+@charset "gb2312";
+/*Debug CSS*/
+#hd, #ct, #ft { width: 960px; margin: 10px auto; }
+.tempH { height:150px; background-color:#FF9; }
+.bgYellow { background-color:#FFFF99; }
+.bgBlue{ background-color:#EBF2F7;}
+.showgrid { background:url("src/grid.png") repeat scroll 0 0 transparent; }
+.box{ padding:10px;}
+.item-test{ padding: 10px; height:90px; line-height:90px; background-color:#FFFF99;}
+.codeBox{font-family: Helvetica;font-size:16px; margin:30px 10px 0; border:1px solid #DDDDDD;background-color:white;}
+.codeBox .title{ border-bottom:1px solid #DDDDDD; background-color:#F2F2F2;height:15px;
+padding:5px 5px 5px 10px;}
+.copyBt{ cursor:pointer; font-size:12px; color:#06C;}
+.copyBt:hover{ color:#0CF;}
+
+.txtInput{ height:19px;border:1px solid #D8D8D8; padding:0 0.5em; line-height:19px;}
