@@ -1,0 +1,10 @@
+@charset "gb2312";
+/*typography.css*/
+/*font-size*/
+.f31 { font-size:31px; font-family:"simhei"; font-weight:700;  line-height:35px; letter-spacing:-2px; padding:3px 0 0; }
+.f22 { font-size:22px; font-family:"simhei"; padding:3px 0 0; }
+.f18 { font-size:18px;  font-family:"simhei";padding:5px 0 0;  }
+.f16 { font-size:16px; font-weight:700; padding-top:2px;}
+.f14 { font-size:14px;  }
+.f14-b { font-size:14px;  font-weight:700; padding-top:2px;}
+.t-center{ text-align:center;}
