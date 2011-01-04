@@ -1,5 +1,5 @@
 @charset "gb2312";
-/*layout*/
+/*layout CSS*/
 .lay-c5,.lay-c6, .lay-c7, .lay-c8, .lay-c9, .lay-c10,.lay-c11,.lay-c12,.lay-c13,.lay-c14,.lay-c15,.lay-c16,.lay-c17,.lay-c18,.lay-c19{ float:left; display:inline; margin-right:10px;}
 .lay-c5-last,.lay-c6-last, .lay-c7-last, .lay-c8-last, .lay-c9-last, .lay-c10-last,.lay-c11-last,.lay-c12-last,.lay-c13-last,.lay-c14-last,.lay-c15-last,.lay-c16-last,.lay-c17-last,.lay-c18-last,.lay-c19-last{ float:left;display:inline;}
 .lay-c5{ width:190px;}
