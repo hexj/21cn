@@ -21,3 +21,4 @@ sup, sub { vertical-align: baseline; }
 del, ins { text-decoration: none; }
 /* 设置默认字体 */
 body, button, input, select, textarea { font: 12px  "\5b8b\4f53",Tahoma, Helvetica, Arial, sans-serif;/* 用 ascii 字符表示，使得在任何编码下都无问题 */ }
+
