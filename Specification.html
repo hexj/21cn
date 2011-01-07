@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gbk">	
+<title>页面基本结构和命名约定</title>
+<style type="text/css">
+	body { font: 14px/28px Georgia,"Times New Roman",Times,sans-serif; color: #444; }
+	h1 { font-size: 26px; color: #00859D; font-family: Constantia,serif; }
+	h3 { font-size: 14px; color: #555; margin: 20px 0 0; }
+    a:link, a:visited { color: #36c; text-decoration: none; }
+    a:hover, a:active { color: #f60; text-decoration: underline; }
+    .h { color: #f50; }
+
+	#page { width: 750px; margin: 0 auto; }
+	#header { border-bottom: 1px solid #ccc; margin-bottom: 10px; text-align: center; }
+	#content { padding-left: 20px; }
+	#footer { border-top: 1px solid #ccc; margin-top: 20px; text-align: center; }
+
+    #update-log { padding-left: 20px; color: #666; }
+</style>
+</head>
+<body>
+<div id="page">
+	<div id="header">
+		<h1>页面基本结构和命名约定</h1>
+	</div>
+
+	<div id="content">
+		<ol>
+			<li>这是页面的基本结构：
+<textarea rows="10" cols="80">
+<div id="page">
+	<div id="hd">
+		页头
+		<div id="main-nav">
+			主导航条（可选）
+		</div>
+	</div>
+	<div id="ct">
+		内容
+	</div>
+	<div id="ft">
+		页尾
+	</div>
+</div>
+</textarea>
+</li>
+			<li>page（宽度为960px）</li>
+			<li>main-nav 是页面的主导航条，根据具体情况可以省略</li>
+			<li>hd、ct 和 ft 的命名参考自 <a href="#">YUI</a></li>
+
+			<li>id 和 class 的命名总规则为： 内容优先，表现为辅。首先根据内容来取名，比如 main-nav, 如果根据内容找不到合适的命名，可以再结合表现来定，比如 skin-blue, present-tab, col-main.</li>
+			<li>id 和 class 名称一律小写，多个单词用连字符连接，比如 recommend-presents</li>
+			<li>id 和 class 名称中只能出现小写的26个英文字母、数字和连字符（-），任何其它字符都严禁出现</li>
+			<li>id 和 class 尽量用英文单词命名，确实找不到合适的单词时，可以考虑使用产品的中文拼音，除了产品名称和特色词汇，其它任何情况下都严禁使用拼音</li>
+			<li>在不影响语义的情况下，id 和 class 名称中可以适当采用英文单词缩写，比如 col, nav, hd, bd, ft 等，但切忌自造缩写</li>
+			<li>id 和 class 名称中的第一个词必须是单词全拼或语义非常清晰的单词缩写，比如 present, col</li>
+
+			<li>在 JS 中当作 hook 用的 id 和 class, 命名规则为 J_UpperCamelCase. J 是钩子的象形</li>
+			<li>请大家开发新页面时，遵守上面的约定</li>
+		</ol>
+	</div>
+	<div id="footer">
+		<p>Copyright (c) 2010, 21cn.com Inc. All rights reserved. </p>
+	</div>
+
+    <div id="update-log">
+        <ul>
+            <li>2011-1-7 香伟健： 参考taobao DPL 建立此规范</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
