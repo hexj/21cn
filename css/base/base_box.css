@@ -1,0 +1,41 @@
+@charset "gb2312";
+/*box.css*/
+.box{position:relative;}
+.box .title{background:url(src/box_test.png);}/*底图设置*/
+.box .title{background-position:0 0;border:solid #A1CCEC;border-width:1px 1px 0; height:23px; line-height:23px;}/*高度设置*/
+.box .title-fz12{height:21px;line-height:21px;}
+.box .title-fz14{height:23px;line-height:23px;}
+.box .title strong{padding-left:10px;}
+.box .ct{padding:10px;background:#fff;border:1px solid #A1CCEC;zoom:1;}
+.ex .sub-info{position:absolute; top:3px;right:5px;}
+/*round*/
+.box .r-t, .box .r-b {display:block;height:4px;overflow:hidden;position:relative;}/*高度*/
+.box .r-t s, .box .r-b s {float:right;width:4px;height:4px; }/*高度*/
+.box .r-t {margin-bottom:-4px; }
+.box .r-b {margin-top:-4px; }
+.box .r-t, .box .r-t s, .box .r-b, .box .r-b s{background:url(src/box_test.png) no-repeat;}/*底图设置*/
+.box .r-t{background-position:-16px -42px;}
+.box .r-t s{background-position:-12px -42px;}
+.box .r-b{background-position:-16px -46px;}
+.box .r-b s{background-position:-12px -46px;}
+
+/*.box-skin-green*/
+.box-skin-green .title{background:url(src/box_test_green.png);}/*底图设置*/
+.box-skin-green .title{background-position:0 0;border:solid #A8ECA2;border-width:1px 1px 0; height:23px; line-height:23px;}/*高度设置*/
+.box-skin-green .ct{padding:10px;background:#fff;border:1px solid #A8ECA2;zoom:1;}
+.box-skin-green .r-t, .box-skin-green .r-t s, .box-skin-green .r-b, .box-skin-green .r-b s{background:url(src/box_test_green.png) no-repeat;}
+/*底图设置*/
+.box-skin-green .r-t{background-position:-16px -42px;}
+.box-skin-green .r-t s{background-position:-12px -42px;}
+.box-skin-green .r-b{background-position:-16px -46px;}
+.box-skin-green .r-b s{background-position:-12px -46px;}
+/*.box-skin-orange*/
+.box-skin-orange .title{background:url(src/box_test_orange.png);}/*底图设置*/
+.box-skin-orange .title{background-position:0 0;border:solid #FFE78F;border-width:1px 1px 0; height:23px; line-height:23px;}/*高度设置*/
+.box-skin-orange .ct{padding:10px;background:#fff;border:1px solid #FFE78F;zoom:1;}
+.box-skin-orange .r-t, .box-skin-orange .r-t s, .box-skin-orange .r-b, .box-skin-orange .r-b s{background:url(src/box_test_orange.png) no-repeat;}
+/*底图设置*/
+.box-skin-orange .r-t{background-position:-16px -42px;}
+.box-skin-orange .r-t s{background-position:-12px -42px;}
+.box-skin-orange .r-b{background-position:-16px -46px;}
+.box-skin-orange .r-b s{background-position:-12px -46px;}
