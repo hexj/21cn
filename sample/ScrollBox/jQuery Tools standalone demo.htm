@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0054)http://flowplayer.org/tools/demos/scrollable/index.htm -->
+<HTML>
+<HEAD>
+<TITLE>jQuery Tools standalone demo</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<!--
+	This is a jQuery Tools standalone demo. Feel free to copy/paste.
+	                                                         
+	http://flowplayer.org/tools/demos/
+	
+	Do *not* reference CSS files and images from flowplayer.org when in production  
+
+	Enjoy!
+-->
+<!-- include the Tools -->
+<SCRIPT 
+src="jQuery%20Tools%20standalone%20demo_files/jquery.tools.min.js"></SCRIPT>
+<!-- standalone page styling (can be removed) -->
+<LINK rel=stylesheet 
+type=text/css 
+href="jQuery%20Tools%20standalone%20demo_files/standalone.css">
+<LINK 
+rel=stylesheet type=text/css 
+href="jQuery%20Tools%20standalone%20demo_files/scrollable-horizontal.css">
+<LINK 
+rel=stylesheet type=text/css 
+href="jQuery%20Tools%20standalone%20demo_files/scrollable-buttons.css">
+<META name=GENERATOR content="MSHTML 8.00.7600.16700">
+</HEAD>
+<BODY>
+<!-- HTML structures -->
+<!-- "previous page" action -->
+<A 
+class="prev browse left"></A>
+<!-- root element for scrollable -->
+<DIV class=scrollable>
+  <!-- root element for the items -->
+  <DIV class=items>
+    <!-- 1-5 -->
+    <DIV><IMG 
+src="jQuery%20Tools%20standalone%20demo_files/321464099_a7cfcb95cf_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/2796719087_c3ee89a730_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/244441862_08ec9b6b49_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/66523124_b468cf4978_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/399223606_b875ddf797_t.jpg"> </DIV>
+    <!-- 5-10 -->
+    <DIV><IMG 
+src="jQuery%20Tools%20standalone%20demo_files/399223609_db47d35b7c_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/321464104_c010dbf34c_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/117346184_9760f3aabc_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/399232237_6928a527c1_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/117346182_1fded507fa_t.jpg"> </DIV>
+    <!-- 10-15 -->
+    <DIV><IMG 
+src="jQuery%20Tools%20standalone%20demo_files/3323896446_3b87a8bf75_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/3323897466_e61624f6de_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/3323058611_d35c894fab_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/3323893254_3183671257_t.jpg"> <IMG 
+src="jQuery%20Tools%20standalone%20demo_files/3323893148_8318838fbd_t.jpg"> </DIV>
+  </DIV>
+</DIV>
+<!-- "next page" action -->
+<A 
+class="next browse right"></A><BR clear=all>
+<!-- javascript coding -->
+<SCRIPT>
+// execute your scripts when the DOM is ready. this is mostly a good habit
+$(function() {
+
+	// initialize scrollable
+	$(".scrollable").scrollable();
+
+});
+</SCRIPT>
+</BODY>
+</HTML>
