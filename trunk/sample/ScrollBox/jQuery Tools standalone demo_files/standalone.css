@@ -1,0 +1,9 @@
+BODY {
+	PADDING-BOTTOM: 50px; PADDING-LEFT: 80px; PADDING-RIGHT: 80px; FONT-FAMILY: "Lucida Grande", "bitstream vera sans", "trebuchet ms", sans-serif, verdana; PADDING-TOP: 50px
+}
+A:active {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+:focus {
+	-moz-outline-style: none
+}
