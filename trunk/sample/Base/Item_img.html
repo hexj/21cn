@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>Welcome To 21cn FrontEnd</title>
+<link href="../../css/base/base2010-v1.css" rel="stylesheet" >
+<!--[if IE ]>
+<link href="../../css/base/typography_ie.css" rel="stylesheet" >
+<![endif]-->
+<link href="../../css/base/debug.css" rel="stylesheet" >
+<link href="../../third-party/lightBox/jquery.lightbox-0.5.css" rel="stylesheet" >
+<style>
+<!--
+h2.title { font-size:36px; text-align:center; font-weight:700; }
+p.msg { text-align:center; line-height:2em; }
+.box { margin-bottom:10px; }
+.box .labelName { background-color:#09C; padding:5px 20px; margin:0; color:yellow; font-weight:700; cursor:pointer; font-size:14px; }
+.box .selected { background-color:#09F; color:yellow; }
+.box .hover { background-color:#09F; color:white; }
+.box .ct { padding:5px 20px; border:1px solid #999; border-top-width:0; display:none; }
+.box .open { display:block; }
+.wd380 { width:380px; }
+.item-img:first-child{ background-color:yellow}
+-->
+</style>
+<script src="../../third-party/jquery/jquery-1.3.2.min.js"></script>
+<script src="../../third-party/lightBox/jquery.lightbox-0.5.js"></script>
+<script>
+$.fn.extend({
+			FoldedBox: function(options){
+				$(":first",this).hover(
+  function () {
+    $(this).addClass("hover");
+  },
+  function () {
+    $(this).removeClass("hover");
+  }
+).toggle(
+  function () {
+    $(this).addClass("selected").next().slideDown("slow");
+	
+  },
+  function () {
+    $(this).removeClass("selected").next().slideUp("slow");
+  }
+);
+			}
+			});
+//RunCode
+jQuery(function($){
+    //alert("j");
+	$(".box").FoldedBox();
+	$('#gallery .pre a').lightBox();
+});
+</script>
+</head>
+<body id="page1">
+<div id="hd" class="bgYellow wd960"  style="height:100px;">
+  <h2 class="title">图片相关</h2>
+  <p class="msg">typography.css</p>
+</div>
+<div id="ct" class="" style="padding:50px 0;" >
+  <!--start-->
+   <h2 class="fz18">基本结构</h2>
+    <div class="cfix list-img">
+    <!--list-->
+      <div class="item-img">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <!--list-->
+    </div>
+  <!-- line-->
+   <h2 class="fz18">测试1-定宽浮动，高度不统一（适用于vm，数据自动循环）</h2>
+    <div class="cfix list-img" style="width:640px;">
+    <!--list-->
+      <div class="item-img flt first">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      <p class="">票数：<span class="c-blue">12345</span></p>
+      </div>
+      <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <!--clear-->
+      <div class="clear"></div>
+      <div class="item-img flt first">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+       <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+       <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+       <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+       <div class="item-img flt">
+      <div class="pre"><a href="#"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <!--list-->
+    </div>  
+  <!-- line-->
+  <h2 class="fz18">lightbox示例</h2>
+    <div class="cfix list-img" id="gallery">
+    <!--list-->
+      <div class="item-img" >
+      <div class="pre"><a href="images/b1.jpg" title="大图描述"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="images/b2.jpg" title="大图描述"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="images/b3.jpg" title="大图描述"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="images/b4.jpg" title="大图描述"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <div class="item-img">
+      <div class="pre"><a href="images/b5.jpg" title="大图描述"><img alt="" src="images/120_90.jpg" width="120" height="90"></a></div>
+      <p class="tc"><a class="c-blue" href="#">壹贰叁肆伍陆柒捌玖</a></p>
+      </div>
+      <!--list-->
+    </div>
+      <!-- line-->
+  <!--End-->
+</div>
+<!--ft-->
+<div id="ft" class="bgYellow wd960" style="height:75px;" >
+  <h2 class="title">Foot</h2>
+  <p class="msg">Copyright &copy; 2010 21cn by Vk-Heung</p>
+</div>
+</body>
+</html>
