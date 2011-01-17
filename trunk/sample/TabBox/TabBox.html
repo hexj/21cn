@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>Welcome To 21cn FrontEnd</title>
+<link href="../../css/base/base2010-v1.css" rel="stylesheet" >
+<!--[if IE ]>
+<link href="../../css/base/typography_ie.css" rel="stylesheet" >
+<![endif]-->
+<link href="../../css/base/debug.css" rel="stylesheet" >
+<link href="TabBox/tab-box.css" rel="stylesheet" >
+<style>
+<!--
+h2.title { font-size:36px; text-align:center; font-weight:700; }
+p.msg { text-align:center; line-height:2em; }
+.item-test { height:30px; line-height:30px; }
+-->
+</style>
+<style>
+/*scroll-mod config*/
+.tab-skin1{ background-color:#FFF;}
+.tab-skin1 .tab-nav li{width:96px;}
+.tab-skin1 .tab-nav .current{width:97px;}
+.tab-skin1 .pane{ padding:10px;}
+</style>
+<script src="../../third-party/jquery/jquery-1.4.2.min.js"></script>
+<script src="../../third-party/jquery Tools/jquery.tools.min.js"></script>
+<script >
+//RunCode
+jQuery(function($){
+$("#tab-nav-1").tabs("#tab-ct-1 .pane",{event:'mouseover',tabs: 'li'});
+});
+</script>
+</head>
+<body id="page">
+<div id="hd" class="bgYellow wd960"  style="height:100px;">
+  <h2 class="title">Tab切换示例</h2>
+</div>
+<div id="ct" class="showgrid">
+  <!--  layout-->
+  <div class="pd5-0" id="">
+    <div class="cfix">
+      <div class="lay-c10">
+        <!--box-->
+    <div class="tab-mod tab-skin1">
+      <ul class="tab-nav cfix" id="tab-nav-1"><li><a href="#">标题一</a></li><li class="current"><a href="#">标题二</a></li><li><a href="#">标题三</a></li><li><a href="#">标题四</a></li></ul>
+      <div class="ct"  id="tab-ct-1">
+        <!--ct-->
+        <div class="pane">
+        这里显示的内容块一
+        </div>
+       <div class="pane">
+        这里显示的内容块二
+        </div>
+        <div class="pane">
+        这里显示的内容块三
+        </div>
+        <div class="pane">
+        这里显示的内容块四
+        </div>
+        <!--ct-->
+      </div>
+    </div>
+        <!--box-->
+      </div>
+      <div class="lay-c14-last">
+        <!--box-->
+        <div style="" class=" bgYellow pd10">
+          <p > Tab切换示例<br />
+            需要配置.tab-nav li的高宽 </p>
+        </div>
+        <!--box-->
+      </div>
+    </div>
+  </div>
+  <!--End-->
+</div>
+<div id="ft" class="bgYellow wd960" style="height:75px;" >
+  <h2 class="title">Foot</h2>
+  <p class="msg">Copyright &copy; 2010 21cn by Vk-Heung</p>
+</div>
+</body>
+</html>
