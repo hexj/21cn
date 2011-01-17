@@ -18,24 +18,25 @@ p.msg { text-align:center; line-height:2em; }
 </style>
 <style>
 /*scroll-mod config*/
-.sc-1 { border:1px solid #ccc;}
-.sc-1 .scroll-box { width:388px; height:288px; }
-.sc-1 .scroll-list-h { width:1552px; }/*item+1*/
-.sc-1 .scroll-item { width:384px; height:288px;padding:2px;   }
-.sc-1 .scroll-item img{ width:384px; height:216px;overflow:hidden;}
+.scroll-news { border:1px solid #ccc; background-color:#FFF;  }
+.scroll-news .scroll-box { width:388px; height:25px;  }
+.scroll-news .scroll-list-v {height:2500px;  }/* this time we have very large space for the height */
+.scroll-news .scroll-item { width:388px; height:25px; line-height:25px; padding:0 10px; }
+.scroll-news .scroll-item:hover{ background-color:#E9F0FC;}
 </style>
 <script src="../../third-party/jquery/jquery-1.4.2.min.js"></script>
 <script src="../../third-party/jquery Tools/jquery.tools.min.js"></script>
 <script >
 //RunCode
 jQuery(function($){
-$("#tab-ct-2").scrollable({circular: true}).navigator().autoscroll({ interval:3000,autoplay: true });;
+				// initialize scrollable with mousewheel support
+	$("#scroll-news").scrollable({ vertical: true, mousewheel: true, circular: true}).autoscroll({ interval:3000,autoplay: true });
 });
 </script>
 </head>
 <body id="page">
 <div id="hd" class="bgYellow wd960"  style="height:100px;">
-  <h2 class="title">焦点图示例</h2>
+  <h2 class="title">滚动新闻示例</h2>
 </div>
 <div id="ct" class="showgrid">
   <!--  layout-->
@@ -43,41 +44,22 @@ $("#tab-ct-2").scrollable({circular: true}).navigator().autoscroll({ interval:30
     <div class="cfix">
       <div class="lay-c10">
         <!--box-->
-        <div class="scroll-mod sc-1">
-          <!--滚动容器-->
-          <div class="scroll-box" id="tab-ct-2">
-            <div class="scroll-list-h">
-              <div class="scroll-item">
-                <div class=""> <a href="#"><img src="images/b1.jpg" alt="" /></a></div>
-                <p class="pd5 fz14-b"><a href="#">1贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌</a></p>
-              </div>
-              <div class="scroll-item">
-                <div class=""> <a href="#"><img src="images/b2.jpg" alt="" /></a></div>
-                <p class="pd5 fz14-b"><a href="#">2贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌</a></p>
-              </div>
-              <div class="scroll-item">
-                <div class=""> <a href="#"><img src="images/b3.jpg" alt="" /></a></div>
-                <p class="pd5 fz14-b"><a href="#">3贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌</a></p>
-              </div>
+        <div class="scroll-mod scroll-news">
+          <div class="scroll-box" id="scroll-news">
+            <div class="scroll-list-v">
+              <div class="scroll-item"><a href="#" class="c-blue">·[滚动新闻] 滚动新闻示例1</a></div>
+              <div class="scroll-item"> <a class="c-blue" href="#" target="_blank">·江门性文化展变味 </a> <a class="c-blue" href="#" target="_blank">·12岁男孩小区内被碾身亡</a> </div>
+              <div class="scroll-item"><a href="#" class="c-blue">·菅直人新内阁欲化解财政危机</a> <a class="c-blue" href="#" target="_blank">·盘点男明星的太太 </a></div>
             </div>
           </div>
-          <!--滚动控制-->
-          <div class="navi"></div>
-          <ul class="scroll-ctrl" id="focusCtrl" style="display:none">
-            <li class="">1</li>
-            <li class="current">2</li>
-            <li class="">3</li>
-          </ul>
         </div>
         <!--box-->
       </div>
       <div class="lay-c14-last">
         <!--box-->
         <div style="" class=" bgYellow pd10">
-          <p > 
-          滑动盒子<br />
-          需要配置滑动容器的高宽使用
-          	</p>
+          <p > 纵向滑动新闻<br />
+            需要配置滑动容器的高宽使用 </p>
         </div>
         <!--box-->
       </div>

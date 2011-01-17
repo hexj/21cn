@@ -27,3 +27,10 @@
 .pd-r10{ padding-right:10px;}
 /*margin*/
 .mb10{ margin-bottom:10px;}
+/*border*/
+.br{ border:1px solid #999}
+/*gird-layout*/
+.g1-2, .g1-3, .g1-4{ float:left;}
+.g1-2{ width:49.9%;}
+.g1-3{ width:33.3%;}
+.g1-4{ width:24.9%;}

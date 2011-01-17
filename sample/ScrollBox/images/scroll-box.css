@@ -2,8 +2,9 @@
 /*scroll-mod*/
 .scroll-mod { position:relative; zoom:1 }
 .scroll-box { overflow:hidden; position:relative; z-index:1; background-color:#FFF}
-.scroll-list { position:absolute; overflow:hidden; }
-.scroll-item { overflow:hidden; float:left;padding:2px;  }
+.scroll-list-v, .scroll-list-h { position:absolute; overflow:hidden; }
+.scroll-list-v .scroll-item { overflow:hidden; }
+.scroll-list-h .scroll-item { overflow:hidden; float:left;padding:2px;  }
 .scroll-mod .navi { position:absolute; z-index:2; bottom:10px;right:10px;  }
 .scroll-mod .navi a { background: url("navigator.png") no-repeat scroll 0 0 transparent; display: block; float: left; font-size: 1px; height: 8px; margin: 3px; width: 8px; }
 .scroll-mod .navi a.active { background-position: 0 -16px; }

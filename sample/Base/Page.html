@@ -35,48 +35,41 @@ $("#tab-ct-2").scrollable({circular: true}).navigator().autoscroll({ interval:30
 </head>
 <body id="page">
 <div id="hd" class="bgYellow wd960"  style="height:100px;">
-  <h2 class="title">焦点图示例</h2>
+  <h2 class="title">分页器</h2>
 </div>
 <div id="ct" class="showgrid">
   <!--  layout-->
   <div class="pd5-0" id="">
     <div class="cfix">
-      <div class="lay-c10">
-        <!--box-->
-        <div class="scroll-mod sc-1">
-          <!--滚动容器-->
-          <div class="scroll-box" id="tab-ct-2">
-            <div class="scroll-list-h">
-              <div class="scroll-item">
-                <div class=""> <a href="#"><img src="images/b1.jpg" alt="" /></a></div>
-                <p class="pd5 fz14-b"><a href="#">1贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌</a></p>
-              </div>
-              <div class="scroll-item">
-                <div class=""> <a href="#"><img src="images/b2.jpg" alt="" /></a></div>
-                <p class="pd5 fz14-b"><a href="#">2贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌</a></p>
-              </div>
-              <div class="scroll-item">
-                <div class=""> <a href="#"><img src="images/b3.jpg" alt="" /></a></div>
-                <p class="pd5 fz14-b"><a href="#">3贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌</a></p>
-              </div>
-            </div>
-          </div>
-          <!--滚动控制-->
-          <div class="navi"></div>
-          <ul class="scroll-ctrl" id="focusCtrl" style="display:none">
-            <li class="">1</li>
-            <li class="current">2</li>
-            <li class="">3</li>
-          </ul>
+      <div class="lay-c19">
+      <div class="pd10" style="background-color:#FFF">
+      
+     <div class=" mb10">
+     <h2 class="fz14-b mb10">居左</h2>
+          <!--page-ctrl-->
+       <div class="page-ctrl "> <a class="prev" href="">&lt; 上一页</a> <span class="num current">1</span> <a class="num" href="">2</a> <a class="num" href="">3</a> <a class="num" href="">4</a> <a class="num" href="">5</a> <a class="next" href="">下一页 &gt;</a> </div>
+      </div>
+      <div class=" mb10">
+      <h2 class="fz14-b mb10">居中</h2>
+           <!--page-ctrl-->
+       <div class="page-ctrl tc "> <a class="prev" href="">&lt; 上一页</a> <span class="num current">1</span> <a class="num" href="">2</a> <a class="num" href="">3</a> <a class="num" href="">4</a> <a class="num" href="">5</a> <a class="next" href="">下一页 &gt;</a> </div>
+      </div>
+      <div class=" mb10 cfix">
+      <h2 class="fz14-b mb10">居右</h2>
+        <!--page-ctrl-->
+        <div class="page-ctrl frt"> <a class="prev" href="">&lt; 上一页</a> <span class="num current">1</span> <a class="num" href="">2</a> <a class="num" href="">3</a> <a class="num" href="">4</a> <a class="num" href="">5</a> <a class="next" href="">下一页 &gt;</a> </div>
         </div>
+         </div>
         <!--box-->
       </div>
-      <div class="lay-c14-last">
+      <div class="lay-c5-last">
         <!--box-->
         <div style="" class=" bgYellow pd10">
           <p > 
-          滑动盒子<br />
-          需要配置滑动容器的高宽使用
+          分页器<br />
+         居左  class="page-ctrl "<br />
+          居中 class="page-ctrl tc "<br />
+         居右  class="page-ctrl frt"<br />
           	</p>
         </div>
         <!--box-->
