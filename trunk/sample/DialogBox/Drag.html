@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>Welcome To 21cn FrontEnd</title>
+<link href="../../css/base/base2010-v1.css" rel="stylesheet" >
+<!--[if IE ]>
+<link href="../../css/base/typography_ie.css" rel="stylesheet" >
+<![endif]-->
+<link href="../../css/base/debug.css" rel="stylesheet" >
+<link href="TabBox/tab-box.css" rel="stylesheet" >
+<style>
+<!--
+h2.title { font-size:36px; text-align:center; font-weight:700; }
+p.msg { text-align:center; line-height:2em; }
+.item-test { height:30px; line-height:30px; }
+.move-handle{ cursor:move;}
+-->
+</style>
+<script src="../../third-party/jquery/jquery-1.4.2.min.js"></script>
+<script src="../../third-party/jquery Tools/jquery.tools.min.js"></script>
+<script src="../../third-party/jquery.event.drag/jquery.event.drag.min.js"></script>
+<script >
+//RunCode
+jQuery(function($){
+
+var triggers1 = $("#show1").overlay({
+	// some mask tweaks suitable for modal dialogs	
+	closeOnClick: false
+});
+var triggers2 = $("#show2").overlay({
+	// some mask tweaks suitable for modal dialogs	
+	closeOnClick: false
+});
+$("#d2").drag(function( ev, dd ){
+		$( this ).css({
+			top: dd.offsetY,
+			left: dd.offsetX
+		});
+	},{ handle:"#d2 .move-handle" });	
+
+});
+</script>
+</head>
+<body id="page">
+<div id="hd" class="bgYellow wd960"  style="height:100px;">
+  <h2 class="title">可拖拽模态窗口示例</h2>
+</div>
+<div id="ct" class="showgrid">
+  <!--  layout-->
+  <div class="pd5-0" id="">
+    <div class="cfix">
+      <div class="lay-c10">
+        <!--box-->
+        <div class="pd10">
+         <a  id="show1" rel="#d1" href="#">打开模态窗口</a><br /><br />
+         <a  id="show2" rel="#d2" href="#">打开可拖拽模态窗口</a>
+        </div>
+        <!--box-->
+      </div>
+      <div class="lay-c14-last">
+        <!--box-->
+        <div class=" bgYellow pd10 " style="height:1000px;" >
+          <p > 可拖拽模态窗口示例<br />
+            需要配置box的宽<br />
+            一个窗口打开会自动隐藏其它窗口<br />
+           盒子里面class="close"自动绑定关闭 <br />
+           绑定handle <br />
+           { handle:"#d1 .title" }
+             </p>
+        </div>
+        <!--box-->
+      </div>
+    </div>
+  </div>
+  <!--End-->
+</div>
+<div id="ft" class="bgYellow wd960" style="height:75px;" >
+  <h2 class="title">Foot</h2>
+  <p class="msg">Copyright &copy; 2010 21cn by Vk-Heung</p>
+</div>
+<!--appendHtml-->
+<!--d1-->
+<div class="box hide" id="d1" style=" width:310px; position:absolute"> <s class="r-t"><s></s></s>
+        <div class="title"><strong class="fz14">我不可以拖拽</strong></div>
+        <div class="ex">
+          <p class="sub-info"><a href="#" class="close">关闭</a></p>
+        </div>
+        <div class="ct">这里是内容<br />
+        <button type="button"  class="close">关闭窗口</button></div>
+        <s class="r-b"><s></s></s> </div>
+        <!--d2-->
+<div class="box hide" id="d2" style=" width:310px; position:absolute"> <s class="r-t"><s></s></s>
+        <div class="title move-handle"><strong class="fz14">点击标题拖拽</strong></div>
+        <div class="ex">
+          <p class="sub-info"><a href="#" class="close">关闭</a></p>
+        </div>
+        <div class="ct">这里是内容<br />
+        <button type="button"  class="close">关闭窗口</button></div>
+        <s class="r-b"><s></s></s> </div>
+</body>
+</html>
