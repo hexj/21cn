@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>Welcome To 21cn FrontEnd</title>
+<link href="../../css/base/base2010-v1.css" rel="stylesheet" >
+<!--[if IE ]>
+<link href="../../css/base/typography_ie.css" rel="stylesheet" >
+<![endif]-->
+<link href="../../css/base/debug.css" rel="stylesheet" >
+<style>
+<!--
+h2.title { font-size:36px; text-align:center; font-weight:700; }
+p.msg { text-align:center; line-height:2em; }
+.item-test { height:30px; line-height:30px; }
+-->
+</style>
+<script src="../../third-party/jquery/jquery-1.3.2.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../../third-party/prettify/prettify.css"/>
+<script src="../../third-party/prettify/prettify.js" type="text/javascript" ></script>
+<script src="../../third-party/ZeroClipboard/ZeroClipboard.js" type="text/javascript" ></script>
+<script src="../../js/base.js"></script>
+<script>
+//RunCode
+jQuery(function($){
+	prettyPrint();
+});
+</script>
+</head>
+<body id="page1">
+<div id="hd" class="bgYellow wd960"  style="height:100px;">
+  <h2 class="title">Gird CSS</h2>
+</div>
+<div id="ct" class=" bgYellow">
+  <!--start-->
+ <div class="form-mod">
+	<form  name="register" method="post" action="" id="register">
+		<fieldset>
+		<legend>表单名称</legend>
+		<div>
+			<label for="q">搜索：</label>
+			<input type="text" value="" name="q" maxlength="24" id="q">
+		</div>
+		<div>
+			<label for="name">姓名：</label>
+			<input type="text" value="" name="name" maxlength="12" id="name">
+			<em>小提示！！</em>
+		</div>
+		<div>
+			<label for="username">用户名：</label>
+			<input type="text" value="" name="username" maxlength="12" id="username">
+			<em class="true">你输入的用户名正确！</em>
+		</div>
+		<div>
+			<label for="nickname">昵称：</label>
+			<input type="text" value="" name="nickname" maxlength="12" id="nickname">
+			<em class="false">你输入了错误的昵称！</em>
+		</div>
+		<div>
+			<label for="password">密码：</label>
+			<input type="password" value="" name="password" maxlength="14" id="password">
+		</div>
+		<div>
+			<label for="confirm-password">确认密码：</label>
+			<input type="password" value="" name="confirm-password" maxlength="14" id="confirm-password">
+		</div>
+		<div>
+			<label for="email">邮箱：</label>
+			<input type="text" value="" name="email" maxlength="36" id="email">
+			<em>邮箱格式：example@example.com</em>
+		</div>
+		<div>
+			<label for="confirm-email">确认邮箱：</label>
+			<input type="text" value="" name="confirm-email" maxlength="36" id="confirm-email">
+		</div>
+		<div>
+			<label for="birthdate">出生日期：</label>
+			<!--<input id="birthdate" maxlength="" name="birthdate" type="text" value="" />-->
+			<select name="year" id="year">
+			<option value="">-</option>
+			<option value="1980">1980</option>
+			<option value="1981">1981</option>
+			<option value="1982">1992</option>
+			<option value="1983">1983</option>
+			</select><span>年</span><select name="month" id="month">
+			<option value="">-</option>
+			<option value="01">01</option>
+			<option value="02">02</option>
+			<option value="03">03</option>
+			<option value="04">04</option>
+			</select><span>月</span><select name="day" id="day">
+			<option value="">-</option>
+			<option value="01">01</option>
+			<option value="02">02</option>
+			<option value="03">03</option>
+			<option value="04">04</option>
+			</select><span>日</span><em class="false">请选择完整的日期！</em>
+		</div>
+		<div>
+			<label for="age">年龄：</label>
+			<input type="text" value="" name="age" maxlength="2" id="age">
+		</div>
+		<div>
+			<label for="gender">性别：</label>
+			<!--<input id="gender" name="gender" type="text" maxlength="2" value="" />-->
+			<select name="gender" id="gender">
+			<option value="">-</option>
+			<option value="male">男</option>
+			<option value="female">女</option>
+			</select>
+		</div>
+		<div>
+			<label for="zip">邮编：</label>
+			<input type="text" value="" name="zip" maxlength="6" id="zip">
+		</div>
+		<div>
+			<label for="address">地址：</label>
+			<input type="text" value="" name="address" maxlength="36" id="address">
+		</div>
+		<div>
+			<label for="tel">电话：</label>
+			<input type="text" value="" name="tel" maxlength="13" id="tel">
+		</div>
+		<div>
+			<label for="check-code">验证码：</label>
+			<input type="text" value="" name="check-code" maxlength="6" id="check-code">
+			<span class="code">iAmMax</span>
+		</div>
+		<div>
+			<label for="comments">留言：</label>
+			<textarea rows="5" name="comments" cols="30" id="comments"></textarea>
+		</div>
+		<div>
+			<button type="submit" title="提交">提交</button>
+			<button type="reset" title="重置">重置</button>
+		</div>
+		</fieldset>
+	</form>
+</div>
+  <!--End-->
+</div>
+<div id="ft" class="bgYellow wd960" style="height:75px;" >
+  <h2 class="title">Foot</h2>
+  <p class="msg">Copyright &copy; 2010 21cn by Vk-Heung</p>
+</div>
+</body>
+</html>
