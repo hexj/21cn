@@ -1,0 +1,18 @@
+@charset "gb2312";
+/*Tool CSS*/
+/*float*/
+.flt { float: left; }
+.frt { float: right; }
+/*Specification:Add className cfix to its parentNode to clear float*/
+.cfix:after { clear: both; display: block; content: "."; height: 0; visibility: hidden; font-size: 0; }
+.cfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .cfix { zoom: 1; }
+.cfix { display: block; }
+/* End hide from IE-mac */
+*:first-child+html .cfix { zoom: 1; } /* IE7 */
+.clear { clear: both; float: none; font-size: 0; line-height: 0; height: 0; overflow: hidden; padding: 0; margin: 0; }
+hr { clear: both; height: 1px; border:solid 1px transparent; width: 100%; margin:0; padding: 0; font-size: 0; line-height: 0; }
+/*Equal Height
+Specification:Add className equalHeight to it and add style:"overflow:hidden;" to its parentNode*/
+.equalHeight { padding-bottom: 32767px !important; margin-bottom: -32767px !important; }

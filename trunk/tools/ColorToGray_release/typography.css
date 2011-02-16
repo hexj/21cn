@@ -1,0 +1,112 @@
+@charset "gb2312";
+/*typography.css*/
+hr { display: none; }
+strong { color:#666; font-weight: bold; }
+em { font-style: italic; }
+a:focus, a:hover { color:#BD0A01; }
+a { color:#2B2B2B; text-decoration:none; white-space:nowrap; }
+a.wsn { white-space:normal; }
+a.detail { color:#BA2538; }
+a.bt { background:transparent url("http://news.21cn.com/images/2010/bt.gif") repeat-X scroll 0 0; line-height:23px; border:1px solid #D8D8D8; padding:4px; margin:0 10px; }
+a.bt-h17 { line-height:17px; padding:1px 10px; }
+/*form Style*/
+button.bt { background:transparent url("http://news.21cn.com/images/2010/bt.gif") repeat-X scroll 0 0; height:19px; line-height:17px; border:1px solid #D8D8D8; padding:0 10px 2px; margin:0 10px; cursor:pointer; }
+
+button, .e_button { border:1px solid #D8D8D8; background:url("http://news.21cn.com/images/2010/bt.gif") #fff repeat-x; color:#036; font-size:12px; padding:0 8px; *padding:0 7px;
+text-align:center;  height:21px; line-height:18px; padding-bottom:3px; *line-height:17px;
+_padding-top:5px; _line-height:8px; font-family:arial; cursor:pointer; zoom:1}
+button:hover, .e_button:hover { color:#BD0A01; }
+@-moz-document domain() {
+ button, .e_button {
+ padding:0 5px 3px 5px; /* FF3很奇怪，左右比一般浏览器都多出2px */
+ padding-bottom:4px; /* 微调FF3中文字在按钮中显示的位置 */
+}
+}
+/*img*/
+.preview { padding:0 10px 0 0; }
+.preview2 { padding:0 10px 10px 0; }
+/*h style*/
+h1 { margin:.825em 0 .5em 0; font-size:2.125em; }
+h2 { margin:.825em 0 .5em 0; font-size:1.75em; }
+/*h3 { margin:.825em 0 .5em 0; font-size:1.5em; }*/
+h4 { margin:.825em 0 .5em 0; font-size:1.25em; }
+h5 { margin:.825em 0 .5em 0; font-size:1.125em; }
+h6 { margin:.825em 0 .5em 0; font-size:1em; }
+/*paragraph style*/
+ p { line-height:1.5em; margin:0.5em 0 1em; }
+p.last { margin-bottom: 0!important; }
+p img.left { float:left; margin:1.5em 1.5em 1.5em 0; padding:0; }
+p img.right { float:right; margin:1.5em 0 1.5em 1.5em; }
+/*list style*/
+ul { line-height:2em; }
+ul li { background:url("square1.gif") no-repeat scroll 10px .9em transparent; padding-left:2em; }
+ul.txt { zoom:1; }
+ul.txt li { line-height:22px; background:transparent url("http://news.21cn.com/images/2010/square1.gif") no-repeat scroll 0 9px; padding-left:10px; }
+ul.txt .noBg { background-image:none; padding-left:0; }
+ul.txt li.c-blue { background:transparent url("http://news.21cn.com/images/2010/square2.gif") no-repeat scroll 0 9px; color:#003C6E; }
+ul.txt li.as a { padding:0 10px; }
+ul.txt li.as a:first-child { padding-left:0; }
+ul.txt li .sub { padding-left:10px; }
+ul.txt li .subject { padding-right:0.7em; }
+ul.f14 li { line-height:25px; background-position:0 11px; }
+ul.lh15 li { line-height:15px; }
+/*chart*/
+.chart { zoom:1; }
+.chart li { line-height:22px; padding-left:2em; background:transparent url(http://news.21cn.com/images/2010/1-10.gif) no-repeat scroll 5px 5px; }
+.chart .no2 { background-position:5px -17px; }/**22*/
+.chart .no3 { background-position:5px -39px; }
+.chart .no4 { background-position:5px -61px; }
+.chart .no5 { background-position:5px -83px; }
+.chart .no6 { background-position:5px -105px; }
+.chart .no7 { background-position:5px -127px; }
+.chart .no8 { background-position:5px -149px; }
+.chart .no9 { background-position:5px -171px; }
+.chart .no10 { background-position:5px -193px; }
+/*comon Class */
+.small { font-size: .8em; color: #666; }
+.large { font-size: 1.2em; }/*14.4px*/
+.bold { font-weight:700; }
+.highlight { background: yellow; padding: 0 .25em; margin: 0 .25em; }
+.center { text-align: center; }
+.hidden { display: none; }
+/*news */
+/* color */
+.c-blue { color:#003C6E; }
+.c-gray { color:#A9A9A9; }
+.c-red { color:#B53035; }
+.c-white { color:white; }
+.c-b { font-weight:700; }
+/*font-size*/
+.f31 { font-size:31px; font-family:"simhei"; font-weight:700; line-height:35px; letter-spacing:-2px; padding:2px 0 1px; }
+.f22 { font-size:22px; font-family:"simhei"; padding-top:3px; }
+.f18 { font-size:18px; font-family:"simhei"; padding:4px 0 1px; }
+.f16 { font-size:16px; font-weight:700; }
+.f14 { font-size:14px; }
+.f14-b { font-size:14px; font-weight:700; }
+.t-center { text-align:center; }
+/*line-height*/
+.lh15 { line-height:15px; }
+/*padding pd */
+
+.pd10 { padding:10px; }
+.pd10-9 { padding:10px 9px; }
+.pd10-9-10-10 { padding:10px 9px 10px 10px; }
+.pd6-0 { padding:6px 0; }
+.pd0-10 { padding:0 10px; }
+.pd10-0 { padding:10px 0; !important
+}
+.pd0-10-10 { padding:0 10px 10px; }
+.pd10-0-15 { padding:10px 0 15px; !important
+}
+.pd-t10 { padding-top:10px; }
+.pd-b5 { padding-bottom:5px; }
+.pd-b6 { padding-bottom:6px; }
+.pd-b7 { padding-bottom:7px; }
+.pd-b8 { padding-bottom:8px; }
+.pd-b10 { padding-bottom:10px; }
+.pd-b20 { padding-bottom:20px; }
+.pd-l7 { padding-left:7px; }
+.pd-l10 { padding-left:10px; }
+.pd-r9 { padding-right:9px; }
+.pd-r30 { padding-right:30px; }
+.pd-r40 { padding-right:40px; }
