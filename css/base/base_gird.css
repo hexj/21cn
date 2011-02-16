@@ -3,12 +3,15 @@
 .xxoo{ padding:0; margin:0; border:}
 /*padding*/
 /*img preview*/
+.pre{ padding-bottom:5px;}
 .prex{padding:0 10px 10px 0; }
 .pre-flt{ padding:0 10px 10px 0; float:left;}
 .pre-flt-r{ padding-right:10px; float:left;}
 .item-img{ padding:0 0 5px 10px; float:left;}
 .item-img:first-child{ padding-left:0; }
 .list-img .first{ padding-left:0;}
+.img-frame{ padding:4px; border:1px solid #AAA;}
+.img-frame:hover{ border:1px solid #AAA; -moz-box-shadow:0 0 3px #0000FF;-webkit-box-shadow:0 0 3px #0000FF;box-shadow:0 0 3px #0000FF;}
 /*5px*/
 .pd5{ padding:5px;}
 .pd5-0{ padding:5px 0;}
@@ -26,6 +29,7 @@
 .pd-l10{ padding-top:10px;}
 .pd-r10{ padding-right:10px;}
 /*margin*/
+.mc{ margin-left:auto; margin-right:auto}
 .mb10{ margin-bottom:10px;}
 /*border*/
 .br{ border:1px solid #999}

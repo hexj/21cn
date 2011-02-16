@@ -1,6 +1,7 @@
 @charset "gb2312";
 /*typography.css*/
-hr {margin-top:7px;*margin: 0;  border: 0; color: #FFF; background-color: #FFF; height: 1px }
+hr { margin-top:7px; *margin: 0;
+border: 0; color: #FFF; background-color: #FFF; height: 1px }
 strong { color:#666; font-weight: bold; }
 em { font-style: italic; }
 a:focus, a:hover { color:#BD0A01; }
@@ -21,11 +22,12 @@ p { line-height:1.5em; }
 .lh24 { line-height:24px; }
 /*字体颜色*/
 .c-blue { color:#003C6E; }
+.c-red { color:#BD0A01; }
 .c003C6E { color:#003C6E; }/*大写Hex*/
 .underline { text-decoration:underline; }/*下划线*/
 /*文本 Text*/
 /*对齐*/
-.tc { text-align:center;}
+.tc { text-align:center; }
 .tr { text-align:right; }
 .tl { text-align:left; }
 .nowrap { white-space: nowrap; } /*强制一行*/
@@ -68,3 +70,10 @@ ul.txt li .sub { font-size:12px; color:#8A8A8A; }
 .page-ctrl .num { width:20px; }
 .page-ctrl .prev, .page-ctrl .next { width:60px; }
 .page-ctrl a:hover, .page-ctrl .current { background-image:url(page_act.gif); color:#fff }
+/*form*/
+input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+.form-mod { font-size:14px; }
+.form-mod form div { margin: 5px 0; }
+.form-mod label { display: inline-block; padding: 4px; text-align: right; width: 100px; }
+.form-mod input { border: 1px solid #999999; padding: 4px; width: 200px; }
+.form-mod textarea { border: 1px solid #999999; padding: 4px; vertical-align: top; width: 400px; }
