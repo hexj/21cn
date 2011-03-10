@@ -1,0 +1,74 @@
+@charset "gb2312";
+/*Page CSS*/
+#article-body { }
+#hd { margin-bottom:10px; }
+#ft, .banner { width:960px; margin:0 auto 10px; overflow:hidden; }
+#article-ct { background:url(ct-bg.gif) repeat-y; width:960px; margin:0 auto; overflow:hidden; }
+.main, .side-bar { background-color:#fff; overflow:hidden; }
+.box .title strong { color:#666666 }
+#bottomBarBox { margin: -1px auto 0; position: relative; width: 960px; }
+#mainBarBorder { border-bottom: 1px solid #DFDFDF; float: left; font-size: 0; height: 0; line-height: 0; width: 630px; }
+#sideBarBorder { border-bottom: 1px solid #DFDFDF; float: right; font-size: 0; height: 0; line-height: 0; width: 320px; }
+/*main-nav*/
+#main-nav { font-size: 14px; margin: 10px auto; width: 960px; }
+#main-nav li { border-left: 1px solid black; float: left; height: 14px; line-height: 16px; margin-left: -1px; padding: 0 11px 0 12px; }
+#main-nav .noBr { border: 0 none; }
+.bn-text-box { border-color: #CECECE; border-style: solid; border-width: 0 1px 1px; line-height: 18px; padding: 5px 0 3px 10px; }
+.article-box { border:1px solid #ccc }
+.hr10 { height:10px; font-size:5px; }
+/*mod-crumbs*/
+.mod-crumbs { width:100%; border-bottom:1px solid #ccc }
+.mod-crumbs-bd { overflow:hidden; padding:0 10px; height:30px; line-height:30px; color:#666; }
+.mod-crumbs-bd a { color:#666; }
+.mod-crumbs-bd a:hover { color:#CC0000; }
+.mod-crumbs-bd span { font-family:\5b8b\4f53; margin:0 5px; }
+.article-hd { border-bottom: 1px solid #CCC; color: #666666; padding: 20px 0; text-align: center; }
+.article-hd h2 { font-family: 'ºÚÌå'; font-size: 30px; margin-bottom: 15px; text-align: center; color:#003399 }
+.article-ct { padding:10px 15px;  }
+.tags { color:#CC0000; font-size:14px; }
+.tags a { color:#CC0000; text-decoration:underline; margin-right: 5px; }
+.zoom-btns { line-height: 25px; }
+.zoom-btns a { display: block; float: left; height: 17px; margin-top: 3px; width: 17px; }
+.zoom-btns span { float: left; padding: 0 10px; color:#999 }
+.info{ text-align:center;}
+.color-ctrl a img{ border:1px solid #fff;}
+.color-ctrl a.selected img{ border:1px solid #FF0;}
+.abstract { background-color: #FFFFFF; border: 1px solid #CCCCCC; font-size: 14px; line-height: 20px; margin: 20px auto 0; padding: 8px 10px; text-indent: 2em; }
+#article-text { font-size:14px; margin-bottom:20px; }
+#article-text p { line-height:25px; margin:20px auto 0; }
+#article-text a { color:#3159A8; }
+#article-text a:hover { color:#CC0000; }
+.share-box { float:left; width:336px; }
+.share-box .box { width:326px; margin-right:10px; }
+.share-box .title { border-color:#CECECE; background-image:url(share-box-title.gif); }
+.share-box .ct { border-color:#CECECE }
+.article-text { font-size:14px; }
+.article-text li { border-bottom:1px solid #CECECE; line-height:22px; padding:10px 0; }
+.snspush { background:#FFFFFF; border: 1px solid #CCCCCC; font-size: 14px; line-height: 16px; margin: 20px auto 0; padding: 10px; text-align: center; }
+.snspush a { padding:1px 0 1px 20px; }
+.ico-sina-weibo { background-image: url(ico-sina-weibo.png); padding-left: 20px; }
+.ico-qq-weibo { background-image: url(ico-qq-weibo.png); padding-left: 20px; }
+.ico-qzone { background-image: url(ico-qzone.png); padding-left: 20px; }
+.ico-douban { background-image: url(ico-douban.png); padding-left: 20px; }
+.rel-news .title { padding:10px 10px 5px; }
+.rel-news-list li { float:left; width:49%; }
+.img-list-1 { padding-bottom:10px; border-bottom:1px dashed #ccc }
+.img-list-1 .item-img { width:148px; padding:0; text-align:center; }
+.box .headline { font-size:14px; font-weight:700; padding:10px; }
+.txt-list-1 li { float:left; width:49%; }
+.txt-list-2 { border-top:1px dashed #ccc; padding-top:5px; margin-top:5px; }
+/*scroll-mod*/
+.scroll-mod { position:relative; zoom:1 }
+.scroll-box { overflow:hidden; position:relative; z-index:1; background-color:#FFF}
+.scroll-list-v, .scroll-list-h { position:absolute; overflow:hidden; }
+.scroll-list-v .scroll-item { overflow:hidden; }
+.scroll-list-h .scroll-item { overflow:hidden; float:left;  }
+.scroll-mod .navi {padding:0 0 10px 270px;}
+.scroll-mod .navi a { background: url("navigator.png") no-repeat scroll 0 0 transparent; display: block; float: left; font-size: 1px; height: 8px; margin: 3px; width: 8px; }
+.scroll-mod .navi a.active { background-position: 0 -16px; }
+/*scroll-mod config*/
+.sc-1 {}
+.sc-1 .scroll-box { width:600px; height:120px; }
+.sc-1 .scroll-list-h { width:20000px; }/*item+1*/
+.sc-1 .scroll-item { width:600px; height:120px;   }
+.img-list-2 .item-img{ width:150px; padding:0; text-align:center;}

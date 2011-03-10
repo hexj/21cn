@@ -1,0 +1,64 @@
+@charset "gb2312";
+/*YUI Reset*/
+body, .cssbase div, .cssbase form, .cssbase input, .cssbase button, .cssbase ul, .cssbase ol, .cssbase li { margin: 0; padding: 0; }
+.cssbase img { border: 0; }
+.cssbase li { list-style: none; }
+/*because legend doesn't inherit in IE */
+.cssbase input, .cssbase button { font: inherit inherit inherit inherit; }
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win,IE7-Win */
+.cssbase input, .cssbase button { vertical-align: middle; *font-size:100%;
+}
+/* 设置默认字体 */
+.cssbase, .cssbase button, .cssbase input, .cssbase select, .cssbase textarea { font: 12px "\5b8b\4f53", Tahoma, Helvetica, Arial, sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */ }
+/*Tool CSS*/
+/*float*/
+.cssbase .flt { float: left; }
+.cssbase .frt { float: right; }
+/*Specification:Add className cfix to its parentNode to clear float*/
+.cfix:after { clear: both; display: block; content: "."; height: 0; visibility: hidden; font-size: 0; }
+.cfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .cfix { zoom: 1; }
+.cfix { display: block; }
+/* End hide from IE-mac */
+*:first-child+html .cfix { zoom: 1; } /* IE7 */
+/*form Style*/
+.cssbase button.bt { background:transparent url("http://news.21cn.com/images/2010/bt.gif") repeat-X scroll 0 0; height:19px; line-height:17px; border:1px solid #D8D8D8; padding:0 10px 2px; margin:0 10px; cursor:pointer; }
+.cssbase button.bt:hover { color:#BD0A01; }
+.cssbase .txtInput { border:1px solid #CCCCCC; height:17px; line-height:17px; margin:0 10px; }
+/*hdBar*/
+#hdBar { height:25px; padding-top:4px; background:#F6F6F6 url("http://news.21cn.com/images/2010/hdBar.jpg") repeat-X scroll 0px bottom; color:#000;  }
+#hdBar a { text-decoration:none }
+#hdBar .wd960 { width:960px; margin:0 auto; }
+#hdBar .userMod { float:right; color:#727171; }
+#hdBar .txtInput { height:18px; line-height:18px; width:74px; margin:0 7px; background-color:#FFF }
+#hdBar .bt { background-image:url("http://news.21cn.com/images/2010/bt2.gif"); color:#727171; margin:0 7px 0 0; }
+#hdBar .bt:hover { color:#BD0A01; }
+#hdBar .c-gray { color:#727171; }
+#hdBar .c-green { color:#297D1A; }
+#hdBar .c-b { font-weight:700 }
+#hdBar .freemail { color:#BD0A01; padding-left:3em; }
+#hdBar .alert { color:#BD0A01; float:left; padding-right:1em; }
+#hdBar .c-gray:hover, #hdBar .freemail:hover { color:#BD0A01; }
+#hdBar .mail { background:transparent url("http://img04.21cn.com/www/images/2010/login/email.gif") no-repeat scroll 0 center; padding-left:20px; margin-right:5px; padding-top:2px; color:#549C1C; font-weight:700; margin-left:5px; }
+#hdBar .jf { background:transparent url("http://img04.21cn.com/www/images/2010/login/gold.gif") no-repeat scroll right center; padding-right:10px; margin-right:5px; padding-top:2px; color:#549C1C; }
+#hdBar .jd { background:transparent url("http://img04.21cn.com/www/images/2010/login/gold.gif") no-repeat scroll right center; padding-right:10px; margin-right:5px; padding-top:2px; color:#549C1C; }
+#hdBar .gift { background:transparent url("http://img04.21cn.com/www/images/2010/login/gift.gif") no-repeat scroll 0 center; padding-left:25px; margin-right:5px; }
+#hdBar .pd-t2 { padding-top:2px; }
+/*widget-select */
+.cssbase .widget-select { background:transparent url("http://news.21cn.com/images/2010/bt2.gif") repeat-X scroll 0 0; height:17px; line-height:17px; border:1px solid #D8D8D8; margin:0 10px; cursor:pointer; position:relative; display:inline; }
+.widget-select .sel_txt { background:transparent url("http://news.21cn.com/images/2010/sel.gif") no-repeat scroll right 0; padding:0 15px 0 4px; }
+.widget-select .ddl { background-color:#FFF; border:1px solid #D8D8D8; position:absolute; z-index:99 }
+.widget-select .ddl li { text-align:left; padding:2px 5px; }
+.widget-select .ddl li.br-b{ border-bottom:1px solid #D8D8D8; }
+.widget-select .ddl li.active { background-color:#D4E2FF; color:black; }
+.widget-select li a { color:#222222; }
+.widget-select li a:visited { color:#222222; }
+.widget-select li a:hover { color:#222222; text-decoration:none; }
+#gotoTxt { width:70px; zoom:1; }
+#option { width:90px; }
+/*toolTips*/
+.cssbase .toolTips-up { position:relative; background-color:#FFFFDE; border:1px solid #C0C09F; padding:2px 5px; float:left; }
+.toolTips-up .arrow { position:absolute; display:block; background:transparent url("http://img04.21cn.com/www/images/2010/login/tips.gif") no-repeat scroll 0 0; height:5px; width:11px; top:-5px; left:15px; }
+.toolTips-up .closeBt { color:#656565; font-weight:700; position:absolute; top:2px; right:5px; cursor:pointer; }
