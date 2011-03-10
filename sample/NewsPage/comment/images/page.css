@@ -1,0 +1,90 @@
+@charset "gb2312";
+/*Page CSS*/
+#discuss-body { background:url(hd.gif) repeat-X; }
+#hd, #ct, #ft { width:960px; margin:0 auto 10px; overflow:hidden; }
+#hd { height:50px; line-height:49px; }
+#hd h1 { width:105px; float:left; }
+#hd .crumb, #hd .crumb a { color:#666; }
+#hd .crumb a:hover { color:#BD0A01; }
+#ct { position:relative; }
+#top { position:absolute; bottom:0; right:0; z-index:2; }
+#ft { border-top:1px solid #DDE3EA; }
+.ico-arrow { background-image:url(ico-arrow.gif); }
+.ico-down { background-image:url(ico-down.gif); padding-left:0; padding-right:1em; background-position:right center; }
+.ico-top { background-image:url(ico-top.gif); padding-left:0; padding-right:1.5em; background-position:right center; }
+.ico-comment { background-image:url(ico-comment.gif); padding-left:30px; }
+/*ct*/
+.w650 { width:650px; }
+.w300 { width:300px; }
+.header h1 { font-size:30px; font-family:"simhei"; font-weight:400; line-height:35px; padding:2px 0 1px; }
+.header { padding:12px 0 7px; }
+.header h1 a { color:#135e92; }
+.header h1 a:hover { color:#BD0A01; }
+/*section*/
+.section { position:relative; zomm:1; }
+.section .ct { border:1px solid #DDE3EA; border-top:0; }
+.section .ex { position:absolute; right:10px; line-height:35px; top:0; }
+.section .more { color:#666666; }
+.section .more:hover { color:#BD0A01; }
+.section-blue .title { background:#03F url(title-blue.gif) repeat-x; height:35px; border:1px solid #3969A8; border-width:0 1px; }
+.section-white .title { background:#FFF url(title-white.gif) repeat-x; height:35px; border:1px solid #DDE3EA; border-width:0 1px; line-height:35px; padding:0 10px; }
+.section-white .title strong { color:#333; font-weight:400; font-size:14px; }
+.section-white .ct { background-color:#F3F8FE; border-bottom:0; }
+.section-white .br-b { border-bottom:1px solid #DDE3EA; }
+.section-commentMod { border:1px solid #CECECE; }
+.section-commentMod .title { background-color:#eef3f9; border:1px solid #F5FFFF; height:22px; line-height:22px; padding-left:10px; }
+.section-commentMod .title a:hover{ color:#cc0000;}
+.section-commentMod .hightlight { color:#cc0000; font-weight:700; }
+.section-commentMod .ct { border-top:1px solid #C7CACF; border-width:1px 0 0; }
+/*tab-mod*/
+.tab-mod { }
+.tab-mod .tab-nav li { float:left; cursor:pointer; }
+/*tab-s1*/
+.tab-s1 .tab-nav { height:31px; padding-top:4px; padding-left:35px; }
+.tab-s1 .tab-nav li { line-height:31px; margin-right:8px; font-size:14px; height:31px; color:#fff; width:84px; text-align:center; }
+.tab-s1 .tab-nav .current { font-weight:700; color:#333333; background:transparent url(tab-nav.gif) repeat-X 0 4px; }
+.box-1 .tab-s1 .tab-nav { padding-left:50px; }
+/*page-ctrl*/
+.page-ctrl a, .page-ctrl span { background:transparent url(page.gif) repeat-X; border:1px solid #CECECE; color:#999999; display:inline-block; text-align:center; line-height:19px; height:19px; }
+.page-ctrl .num { width:20px; }
+.page-ctrl .prev, .page-ctrl .next { width:60px; }
+.page-ctrl a:hover, .page-ctrl .current { background-image:url(page_act.gif); color:#fff }
+/*comment-list*/
+.comment-list { border-top:1px solid #DDE3EA; }
+.comment-item { border-bottom:1px solid #DDE3EA; padding-bottom:20px; }
+.comment-item-hd { height:29px; line-height:29px; background-color:#F6F6F6; padding:0 20px; }
+.comment-item .content { padding:20px; font-size:14px;  }
+.comment-item .content .msg { margin-bottom:20px; }
+.wait { background-color:#E9F0F5; color:#2B65AE; padding:2px 5px; }
+.comment-item .content table{ margin-right:0}
+.comment-item .content table td { border: 1px solid #CCCCCC; text-align: left; text-indent: 8px; zoom:1; }
+.btns { padding:0 20px 0; }
+.btn { background:transparent url(bt.gif) no-repeat; height:25px; line-height:25px; text-align:center; width:80px; cursor:pointer; }
+.btns .btn { margin-left:8px; }
+.btn-down { background:transparent url(bt-down.gif) no-repeat; height:33px; }
+.page-c1 { padding:10px 0; border-bottom:1px solid #DDE3EA; background-color:#F6F6F6; }
+/*reply-mod*/
+.reply-mod { margin:0 20px; background:transparent url(line.gif) no-repeat right 0; padding-top:1px; }
+.reply-mod .inner { border:1px solid #CFCFCF; border-top:0; background-color:#F6F6F6; padding:15px 15px 13px; }
+.textarea-outer{   width:100%;overflow:hidden; }
+.textarea, .textarea-logout, .textarea-login { width:99%; border:1px solid #CCCCCC; background:#fff none no-repeat center center; overflow-y:scroll; }
+.textarea-logout { background-image:url(textarea_bg.gif); background-image:
+}
+.textarea-login { background-image:url(textarea_bg_login.gif); }
+.txtInput { height:19px; line-height:19px; border:1px solid #CCCCCC; padding:0 2px; }
+/*login-line*/
+.login-line { padding:10px 0 0; }
+.login-line .txtInput { width:95px }
+.bt { border:0; cursor:pointer; }
+.bt-blue { background:transparent url(bt-blue.gif) no-repeat; width:82px; height:25px; color:#fff; line-height:25px; }
+.login-line .reg { padding-top:5px; }
+.login-line .login { padding-top:2px; }
+/*add-mod*/
+.add-mod { padding:20px; }
+.add-mod2 { padding:15px; }
+.add-mod2 .txtInput { width:75px; }
+/*comment-chart*/
+.comment-chart li { height:58px; margin-top:-1px; background:transparent url(dot-line.gif) repeat-X 0 bottom; overflow:hidden; }
+.comment-chart .count { float: left; font-family: Arial, Helvetica, sans-serif; font-size: 18px; height: 58px; line-height: 58px; overflow: hidden; padding-right: 25px; text-align: right; width: 37px; color:#cc0000; background:transparent url(num-bg.gif) no-repeat 55px center; }
+.comment-chart .txt { display: block; margin-left: 68px; padding: 9px 10px 0 0; }
+.comment-chart li.noBr { background-image:none }
