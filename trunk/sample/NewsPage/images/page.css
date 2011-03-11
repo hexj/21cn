@@ -57,6 +57,7 @@
 .box .headline { font-size:14px; font-weight:700; padding:10px; }
 .txt-list-1 li { float:left; width:49%; }
 .txt-list-2 { border-top:1px dashed #ccc; padding-top:5px; margin-top:5px; }
+.img-list-3 .item-img { width:148px; padding:0; text-align:center; padding:5px 0; }
 /*scroll-mod*/
 .scroll-mod { position:relative; zoom:1 }
 .scroll-box { overflow:hidden; position:relative; z-index:1; background-color:#FFF}
