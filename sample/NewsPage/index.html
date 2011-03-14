@@ -8,6 +8,7 @@
 <script src="js/jquery-1.4.2.min.js"></script>
 <script src="js/jquery.tools.min.js"></script>
 <script src="js/page.js"></script>
+<script src="js/block-ctrl.js"></script>
 </head>
 <body id="article-body">
 <div id="hd">
@@ -90,14 +91,12 @@
     </ul>
   </div>
   <div class="banner">
-    <div id="ab-1">
-      <!--嵌套iframe-->
-      <a href="#"><img src="images/960.jpg" alt="" /></a>
-      <!--End嵌套iframe-->
+    <div id="ab-1" class="hide">
+    <!--广告代码-->
     </div>
-    <div id="ab-2" class="bn-text-box">
+    <div id="ab-2" class="bn-text-box hide">
       <!--嵌套iframe-->
-      <div>·<a href="#">壹贰叁肆伍陆柒捌玖拾</a></div>
+      
       <!--End嵌套iframe-->
     </div>
   </div>
@@ -107,6 +106,9 @@
   <div class="cfix">
     <!--main-->
     <div class="lay-c16 main">
+    <!--广告位-->
+    <div class="hide" id="ab-3"></div>
+    <!--article-box-->
       <div class="article-box">
         <!-- 面包屑导航{ -->
         <div class="mod-crumbs">
@@ -135,10 +137,10 @@
             <p style="text-align: center;"><img  src="images/320.jpg" type="0" alt="在押人员判决前有望见家属(图)"></p>
             <p style="text-indent: 2em;">1962年4月30日生于日本京都。中学二年级时，父亲去世，前原靠奖学金一直坚持学业。京都大学国际政治学专业毕业后，前原诚司1987年进入有“政治家摇篮”之称的松下政经塾深造。1993年，他作为日本新党成员当选众院议员，次年脱离新党。前原2005年曾在党内选举中击败菅直人，成为民主党历史上最年轻党首。2010年9月17日出任菅直人政府外交大臣。</p>
           </div>
-          <div class="cfix fz14"> <span class="flt"><strong>下一篇：</strong><a href="#" class="c-blue">院士委员指候选人"跑院士" 传公关费几百万</a></span> <span class="frt"> [编辑：余晓瑜]</span> </div>
+          <div class="cfix fz14"> <span class="flt hide"><strong>下一篇：</strong><a href="#" class="c-blue">院士委员指候选人"跑院士" 传公关费几百万</a></span> <span class="frt"> [编辑：余晓瑜]</span> </div>
           <!-- rel-news-->
           <div class="rel-news">
-            <div class="title"><span class="c-blue">[相关新闻]</span></div>
+            <div class="title"><strong class="c-blue">[相关新闻]</strong></div>
             <div class="ct ">
               <!--ct-->
               <ul class="txt fz14">
@@ -158,12 +160,16 @@
         </div>
       </div>
      <div class="hr10"></div>
+     <!--广告位-->
+    <div class="hide" id="ab-4"></div>
       <!--comment-box-->
       <div class="comment-box">
      <!-- <iframe src="comment/mod.html" id="comment-mod" frameborder="0" width="630" height="1573"  scrolling="no"></iframe>-->
         <iframe src="comment/mod.html" id="comment-mod" frameborder="0" width="630" height="236"  scrolling="no"></iframe>
       </div>
       <div class="hr10"></div>
+      <!--广告位-->
+    <div class="hide" id="ab-5"></div>
       <!--customer-box-->
       <div class="customer-box">
         <div class="box">
@@ -176,6 +182,8 @@
         </div>
       </div>
       <div class="hr10"></div>
+      <!--广告位-->
+    <div class="hide" id="ab-6"></div>
       <!--customer-box-->
       <div class="customer-box">
         <div class="box">
@@ -255,11 +263,14 @@
           </div>
         </div>
       </div>
+      <!--广告位-->
+    <div class="hide" id="ab-7"></div>
     </div>
     <!--side-bar-->
     <div class="lay-c8-last side-bar">
       <!--right-->
-      <div class=""><a href=""><img src="images/320.jpg" alt="" /></a></div>
+      <!--广告位-->
+    <div class="hide" id="ab-8"></div>
       <div class="hr10"></div>
       <!--chart-box-->
       <div class="chart-box">
@@ -284,6 +295,8 @@
         </div>
       </div>
       <div class="hr10"></div>
+      <!--广告位-->
+    <div class="hide" id="ab-9"></div>
       <!--img-txt-box-->
       <div class="img-txt-box">
         <div class="box">
@@ -319,9 +332,8 @@
         </div>
       </div>
       <div class="hr10"></div>
-      <div class=""><iframe src="http://market.21cn.com/w/pay/other/110223/0301.html" id="" frameborder="0" width="320" height="168"  scrolling="no"></iframe></div>
-      <div class="hr10"></div>
-      <div class=""><a href=""><img src="images/320.jpg" alt="" /></a></div>
+      <!--广告位-->
+    <div class="hide" id="ab-10"></div>
       <div class="hr10"></div>
       <!--txt-box-->
       <div class="txt-box">
@@ -348,6 +360,8 @@
         </div>
       </div>
       <div class="hr10"></div>
+      <!--广告位-->
+    <div class="hide" id="ab-11"></div>
       <!--img-txt-box-->
       <div class="img-txt-box">
         <div class="box">
@@ -383,6 +397,8 @@
         </div>
       </div>
        <div class="hr10"></div>
+       <!--广告位-->
+    <div class="hide" id="ab-12"></div>
       <!--img-txt-box-->
       <div class="img-txt-box">
         <div class="box">
@@ -418,6 +434,8 @@
         </div>
       </div>
        <div class="hr10"></div>
+       <!--广告位-->
+    <div class="hide" id="ab-13"></div>
       <!--img-box-->
       <div class="img-box">
         <div class="box">
@@ -447,6 +465,8 @@
           </div>
         </div>
       </div>
+      <!--广告位-->
+    <div class="hide" id="ab-14"></div>
       <!--append-->
     </div>
   </div>

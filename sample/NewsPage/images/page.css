@@ -50,7 +50,7 @@
 .ico-qq-weibo { background-image: url(ico-qq-weibo.png); padding-left: 20px; }
 .ico-qzone { background-image: url(ico-qzone.png); padding-left: 20px; }
 .ico-douban { background-image: url(ico-douban.png); padding-left: 20px; }
-.rel-news .title { padding:10px 10px 5px; }
+.rel-news .title { padding:10px 10px 5px; font-size:14px;}
 .rel-news-list li { float:left; width:49%; }
 .img-list-1 { padding-bottom:10px; border-bottom:1px dashed #ccc }
 .img-list-1 .item-img { width:148px; padding:0; text-align:center; }
