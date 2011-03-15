@@ -12,10 +12,10 @@ function ZoomText(el, zoomin, zoomout){
             if (fz[i] == now) {
                 switch (s) {
                     case "in":
-                        now = fz[i - 1];
+                        now = fz[i + 1];
                         break;
                     case "out":
-                        now = fz[i + 1];
+                        now = fz[i - 1];
                         break;
                     default:
                         break;
@@ -65,8 +65,10 @@ function ShareCount(el,c){
 //RunCode
 jQuery(function($){
     ZoomText($("#article-text"), $("#J_zoomin"), $("#J_zoomout"));
-    var b = BgColorCtrl($("#J_change"), $("#J_choice"));
-    b.SetBgColor(1);
+    //var b = BgColorCtrl($("#J_change"), $("#J_choice"));
+   // b.SetBgColor(1);
+   //tabs
+   $("#J_tab_nav").tabs("#J_tab_ct .pane",{event:'mouseover',tabs: 'li'});
 	//scrollable
 	$("#tab-ct-2").scrollable({circular: true}).navigator().autoscroll({ interval:5000,autoplay:true});
 	//share Code
