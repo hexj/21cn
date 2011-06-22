@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>新增文章</title>
+<link rel="stylesheet" href="css/reset.source.css" />
+<link rel="stylesheet" href="css/cms.css" />
+<link rel="stylesheet" href="js/jquery.lightbox-0.5.css" />
+</head>
+<body id="">
+<!--=Swrap -->
+<div class="form-mod" style="width:930px; margin:10px; min-width:930px;">
+  <div class="block page-title clearfix">
+    <h1>新增文章</h1>
+    <div class="fr">
+      <button type="button" class="btn-big">提交</button>
+      <button type="button">返回</button>
+      <button type="button" class="btn5" id="J_qnav" rel="#J_qnav_pannel">快速导航</button>
+      <button type="button" class="btn5" id="J_interface_set" rel="#J_interface_set_pannel" >界面设置</button>
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box" >
+    <div class="title"><strong>标题</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct" id="J_title_ct">
+      <!--ct-->
+      <div class="line">
+        <label class="key required" for="">原标题：</label>
+        <input type="text" id="source_title" name="" value="" class="long">
+        <span class="counter" id="source_title_counter"></span>
+        <span class="color-sel" id="set_source_title_color"><span class="option"></span><span class="option"></span><span class="option"></span></span>
+        </div>
+      <div class="line">
+        <label class="key" for="">长标题：</label>
+        <input type="text" id="long_title" name="" value="" class="long">
+        <span class="counter" id="long_title_counter"></span>
+        <span class="color-sel" id="set_long_title_color"><span class="option"></span><span class="option"></span><span class="option"></span></span>
+      </div>
+      <div class="line">
+        <label class="key" for="">短标题：</label>
+        <input type="text" id="short_title" name="" value="" class="long">
+        <span class="counter" id="short_title_counter"></span>
+        <span class="color-sel" id="set_short_title_color"><span class="option"></span><span class="option"></span><span class="option"></span></span>
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box" >
+    <div class="title"><strong>重要性/推荐置顶</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <label class="key required" for="">重要性：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+        <label class="key" for="">推荐置顶至：</label>
+        <span class="data">
+        <input type="text" id="" name="" value="" class="year" maxlength="4">
+        <em>年</em>
+        <input type="text" id="" name="" value="" class="" maxlength="2">
+        <em>月</em>
+        <input type="text" id="" name="" value="" class="" maxlength="2">
+        <em>日</em>
+        <input type="text" id="" name="" value="" class="" maxlength="2">
+        <em>时</em>
+        <input type="text" id="" name="" value="" class="" maxlength="2">
+        <em>分</em> </span> </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>信息源</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <label class="key required" for="">正式信息源：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+        <label class="key required" for="">临时信息源：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>栏目/一稿多投</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <label class="key required" for="">栏目：</label>
+        <button type="button" class="btn7" id="J_channel_set" rel="#J_channel_set_pannel">从关注栏目选择</button>
+        <button type="button" class="btn7">从关注专题选择</button>
+        <button type="button" class="btn7">从所有栏目选择</button>
+        <button type="button" class="btn7">从所有专题选择</button>
+        <label class="key short" for="">已选：</label>
+        <input type="text" id="" name="" value="" class="last">
+      </div>
+      <div class="line">
+        <label class="key required" for="">一稿多投：</label>
+        <button type="button" class="btn7">从关注栏目选择</button>
+        <button type="button" class="btn7">从关注专题选择</button>
+        <button type="button" class="btn7">从所有栏目选择</button>
+        <button type="button" class="btn7">从所有专题选择</button>
+        <label class="key short" for="">已选：</label>
+        <input type="text" id="" name="" value="" class="last">
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>编者按</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <input type="radio" id="hide_bja" name="" value="" class="radio">
+        <label class="radio-txt" for="hide_bja">不显示</label>
+        <input type="radio" id="show_bja" name="" value="" class="radio">
+        <label class="radio-txt" for="show_bja">显示</label>
+      </div>
+      <div class="line">
+        <div class="textarea-outer">
+          <textarea name="" id="" cols="30" rows="3" class="bja_descn"></textarea>
+        </div>
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>正文</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <img src="img/fck.png" alt="">
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>版权/风险</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <label class="key " for="">正文图片版权：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+        <label class="key " for="">图片风险等级：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+        <label class="key " for="">正文版权风险：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+      </div>      
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>风险评估/关键字/标签/相关链接</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+       <label class="key " for="">政治风险：</label>
+        <input type="radio" id="risk_1" name="" value="" class="radio">
+        <label class="radio-txt" for="risk_1">风险一</label>
+        <input type="radio" id="risk_2" name="" value="" class="radio">
+        <label class="radio-txt" for="risk_2">风险二</label>
+        <input type="radio" id="risk_3" name="" value="" class="radio">
+        <label class="radio-txt" for="risk_3">风险三</label>
+        <input type="radio" id="risk_4" name="" value="" class="radio">
+        <label class="radio-txt" for="risk_4">风险四</label>
+         <label class="key " for="">审核级别：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+         <label class="key " for="">审核状态：</label>
+        <select name="" id="">
+          <option value="">请选择</option>
+        </select>
+      </div>
+      <div class="line">
+        <button class="btn7" type="button">评估</button>
+        <label class="key " for="">触犯关键字：</label>
+        <input type="text" id="" name="" value="" class="max" >
+      </div>
+        <div class="line">
+        <label class="key " for="">备选关键字：</label>
+        <input type="checkbox" id="key_1" name="" value="" class="radio">
+        <label class="radio-txt" for="key_1">新闻</label>
+        <input type="checkbox" id="key_2" name="" value="" class="radio">
+        <label class="radio-txt" for="key_2">大运会</label>
+      </div>
+       <div class="line clearfix">
+        <div class="fl">
+          <input type="checkbox" id="key_check" name="" value="" class="radio">
+          <label class="radio-txt" for="key_check">关键字匹配：</label>
+        </div>
+        <div class="onAlert fl" >正文包含链接时，请勿使用</div>
+      </div>
+      <div class="line">
+        <label class="key " for="">关键字：</label>
+        <input type="text" id="" name="" value="" class="short" >
+        <input type="text" id="" name="" value="" class="short" >
+        <input type="text" id="" name="" value="" class="short" >
+        <input type="text" id="" name="" value="" class="short" >
+        <input type="text" id="" name="" value="" class="short" >
+        <button class="btn5" type="button">获取关键字</button>
+      </div>
+      <div class="line clearfix">
+       <div class="fl">
+          <label class="key " for="">标签：</label>
+          <input type="text" id="" name="" value="" class="max" >
+        </div>
+        <div class="fl fix-tips">
+          <div class="onAlert fl" >半角空格隔开</div>
+        </div>
+      </div>
+      <div class="line">
+      <label class="key " for="">&nbsp;</label>
+       <select name="" id="">
+            <option value="">请选择</option>
+          </select>
+          <button type="button" class="">修改标签</button>
+      </div>
+      <div class="line">
+        <label class="key " for="">相关链接：</label>
+        <input type="text" id="" name="" value="" class="" >
+        <button type="button" class="btn5">搜索</button>
+        <button type="button" class="btn5">三月内搜索</button>
+        <button type="button" class="btn5">一年内搜索</button>
+        <button type="button" class="btn5">三年内搜索</button>
+      </div>
+      <div class="line clearfix" >
+        <div class="fl">
+          <label class="key " for="">&nbsp;</label>
+        </div>
+        <div class="onAlert fl">请在输入框里面输入你要搜索标题的关键字，然后点击搜索按钮，然后在弹出式窗口中查找相关文章信息</div>
+      </div>
+      <div class="line " >
+        <label class="key " for="">&nbsp;</label>
+        <input type="text" id="" name="" value="" class="max" >
+        <input type="checkbox" id="preview" name="" value="" class="radio">
+        <label class="radio-txt" for="preview">预览</label>
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>文章属性</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <button type="button" class="">打开产品库</button>
+      </div>
+      <div class="line clearfix">
+        <div class="fl">
+          <label class="key " for="">图集ID：</label>
+          <input type="text" id="" name="" value="" class="max" >
+        </div>
+        <div class="fl fix-tips">
+          <div class="onAlert fl" >(column03)</div>
+        </div>
+      </div>
+      <div class="line clearfix">
+        <div class="fl">
+          <label class="key " for="">视频ID：</label>
+          <input type="text" id="" name="" value="" class="max" >
+        </div>
+        <div class="fl fix-tips">
+          <div class="onAlert fl" >(column07)</div>
+        </div>
+      </div>
+      <div class="line clearfix">
+        <div class="fl">
+          <label class="key " for="">游戏产品ID：</label>
+          <input type="text" id="" name="" value="" class="max" >
+        </div>
+        <div class="fl fix-tips">
+          <div class="onAlert fl" >(column08)</div>
+        </div>
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>图片</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line clearfix">
+        <div class="fl">
+          <label class="key " for="">首页图片：</label>
+        </div>
+        <div class="img-item fl">
+          <div class="img-pre"> <i></i> <a href="img/900_600.png" class="zoom"><img src="img/100_75.png" alt=""></a></div>
+          <div class="fun">
+            <button type="button" class="btn5">选择</button>
+            <br>
+            <button type="button" class="btn5">置空</button>
+          </div>
+        </div>
+        <div class="fl">
+          <label class="key " for="">列表页图片：</label>
+        </div>
+        <div class="img-item fl">
+          <div class="img-pre"> <i></i> <a href="img/900_600.png" class="zoom"><img src="img/100_75.png" alt=""></a></div>
+          <div class="fun">
+            <button type="button" class="btn5">选择</button>
+            <br>
+            <button type="button" class="btn5">置空</button>
+          </div>
+        </div>
+      </div>
+      <div class="line clearfix">
+        <div class="fl">
+          <label class="key " for="">其它图片：</label>
+        </div>
+        <div class="img-item fl">
+          <div class="img-pre"> <i></i> <a href="img/900_600.png" class="zoom"><img src="img/100_75.png" alt=""></a></div>
+          <div class="fun">
+            <button type="button" class="btn5">选择</button>
+            <br>
+            <button type="button" class="btn5">置空</button>
+          </div>
+        </div>
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>链接</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <label class="key " for="">正文链接：</label>
+        <input type="text" id="" name="" value="" class="max" >
+      </div>
+      <div class="line">
+        <label class="key " for="">原文链接：</label>
+        <input type="text" id="" name="" value="" class="max" >
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="box">
+    <div class="title"><strong>备注</strong></div>
+    <div class="ex">
+      <p class="sub-info"></p>
+    </div>
+    <div class="ct">
+      <!--ct-->
+      <div class="line">
+        <div class="textarea-outer">
+          <textarea name="" id="" cols="30" rows="3" class="note"></textarea>
+        </div>
+      </div>
+      <!--ct-->
+    </div>
+  </div>
+  <div class="blank10"></div>
+  <!--box-->
+  <div class="block">
+    <button type="button" class="btn-big">提交</button>
+    <button type="button">返回</button>
+  </div>
+  <!--box-->
+  <div style=" height:60px;"></div>
+  <!--box-->
+</div>
+<!--=E wrap -->
+<!--append-->
+<!--界面设置浮层-->
+<div class="abs-box hide" id="J_interface_set_pannel">
+<div>
+ <a href="javascript:;" class="close" title="关闭">×</a>
+  <h2 class="title">请勾选默认展开项</h2>
+  <div class="ct" >
+    <div id="J_box_list">
+    loading...
+    </div>
+    <div class="line">
+      <button type="button" id="J_update_display" class="">提交</button>
+    </div>
+  </div>
+</div>
+</div>
+<!--导航浮层-->
+<div class="" id="J_qnav_pannel">
+<div class="minsize" id="J_qnav_ctrl" title="点击显示/隐藏">
+快速导航
+</div>
+<div class="maxsize" id="J_qnav_box">
+<a href="javascript:;" class="close" title="关闭">×</a>
+  <div class="ct" id="J_qnav_list">
+  <button type="button" class="submit">提交文章</button>
+  </div>
+</div>
+</div>
+<!--关注栏目浮层-->
+<div class="abs-box channel_set_pannel hide" id="J_channel_set_pannel">
+<div > <a href="javascript:;" class="close" title="关闭">×</a>
+  <div class="ct">
+    <div class="line clearfix">
+      <div class="channel">
+        <input type="checkbox" class="radio" value="" name="" id="">
+        <label for="" class="radio-txt">新闻频道</label>
+      </div>
+      <div class="channel">
+        <input type="checkbox" class="radio" value="" name="" id="">
+        <label for="" class="radio-txt">财经频道</label>
+      </div>
+      <div class="channel">
+        <input type="checkbox" class="radio" value="" name="" id="">
+        <label for="" class="radio-txt">财经频道</label>
+      </div>
+      <div class="channel">
+        <input type="checkbox" class="radio" value="" name="" id="">
+        <label for="" class="radio-txt">财经频道</label>
+      </div>
+      <div class="channel">
+        <input type="checkbox" class="radio" value="" name="" id="">
+        <label for="" class="radio-txt">财经频道</label>
+      </div>
+      <div class="channel">
+        <input type="checkbox" class="radio" value="" name="" id="">
+        <label for="" class="radio-txt">财经频道</label>
+      </div>
+      <div class="channel">
+        <input type="checkbox" class="radio" value="" name="" id="">
+        <label for="" class="radio-txt">财经频道</label>
+      </div>
+    </div>
+    <div class="line">
+      <button type="button" class="submit">提交</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<script charset="gb2312" type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script charset="gb2312" type="text/javascript" src="js/jquery.tools.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/modify.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "gb2312";
+/*CMS CSS*/
+body { color:#444444 }
+button { padding:0 10px; height:25px; line-height:23px; border:1px solid #A9B4BA; margin-right:5px; background:#fff url(bgimg/btn.png) repeat-x 0 bottom; cursor:pointer; }
+button:hover { color:#36C; border-color:#59B2D4 }
+.btn7 { width:112px; }
+.btn5 { width:90px; }
+.btn-big { padding:0 20px; height:34px; line-height:32px; font-size:20px; font-weight:700; margin:0 20px 0 10px; }
+.block { background-color:#D3E6F3; padding:10px; border:1px solid #A1CCEC }
+.page-title h1 { font-size:24px; font-weight:700; display:inline-block; float:left; }
+/*box*/
+.box { position:relative }
+.box .title { background:url(bgimg/box_blue_skin.png) }
+.box .title { background-position:0 0; border:solid #A1CCEC; border-width:1px 1px 0; height:23px; line-height:23px }
+.box .title-fz12 { height:21px; line-height:21px }
+.box .title-fz14 { height:23px; line-height:23px }
+.box .title strong { padding-left:20px; font-size:14px; background:url(bgimg/fold.png) no-repeat 2px 0;}
+.box .fold strong{ background-image:url(bgimg/unfold.png)}
+.box .ct { padding:10px; background:#fff; border:1px solid #A1CCEC; zoom:1 }
+.ex .sub-info { position:absolute; top:3px; right:5px }
+.box .r-t, .box .r-b { display:block; height:4px; overflow:hidden; position:relative }
+.box .r-t s, .box .r-b s { float:right; width:4px; height:4px }
+.box .r-t { margin-bottom:-4px }
+.box .r-b { margin-top:-4px }
+.box .r-t, .box .r-t s, .box .r-b, .box .r-b s { background:url(bgimg/box_blue_skin.png) no-repeat }
+.box .r-t { background-position:-16px -42px }
+.box .r-t s { background-position:-12px -42px }
+.box .r-b { background-position:-16px -46px }
+.box .r-b s { background-position:-12px -46px }
+/*form-mod*/
+.form-mod { }
+.form-mod .line { margin:5px 0; clear:both; }
+.form-mod label.key { display:inline-block; padding:4px; text-align:right; width:100px; font-size:14px }
+.form-mod label.required { color:#F00 }
+.form-mod label.short { width:50px; }
+.form-mod label i { font-size:9px; }
+.form-mod input { border:1px solid #999; padding:4px; width:200px; margin-right:5px; }
+.form-mod input.last { margin-right:0; }
+.form-mod input.max { width:600px; }
+.form-mod input.long { width:400px; }
+.form-mod input.short { width:100px; }
+.form-mod .data input { width:30px; }
+.form-mod .data input.year { width:60px; }
+.form-mod .data em { padding:4px; }
+.form-mod select { height:25px; line-height:25px; display:inline-block; vertical-align:middle; margin-right:5px; }
+.form-mod textarea { border:1px solid #999; padding:4px; vertical-align:top; width:400px; font-size:14px; }
+.form-mod .radio, .abs-box .radio { width:auto; vertical-align:middle; border:0; margin:0; }
+.form-mod .radio-txt, .abs-box .radio-txt { padding:0 4px; cursor:pointer; }
+.form-mod .radio-txt { font-size:14px; }
+.form-mod .bja_descn { width:890px; }
+.form-mod .note { width:890px; }
+.form-mod .fix-tips { padding:3px; }
+.onAlert { background:#E2F4FF url(bgimg/onShow.gif) no-repeat; padding:0 5px 0 25px; font-size: 12px; line-height:22px; vertical-align:middle; border:1px solid #36ABFF; margin-left:5px; }
+.img-item { border:1px solid #A9B4BA }
+.img-item .img-pre { float:left; width:120px; height:120px; text-align:center; vertical-align:middle; background-color:#D3E6F3; overflow:hidden; }
+.img-item .img-pre i { display: inline-block; height: 100%; vertical-align: middle; }
+.img-item .img-pre img { vertical-align:middle; }
+.img-item .fun { float:left; display:inline; padding:5px; }
+.img-item .fun button { margin:5px 0; }
+/*counter */
+.counter { display:inline-block; font-size:12px; padding:0 5px; }
+.counter em { color: #63B340; font-family: Constantia, Georgia; font-size: 18px; margin: 0 3px; }
+.over { background-color:#FCC }
+.over em { color:#F00 }
+.form-mod .counter { width:90px; }
+/*color-sel*/
+.color-sel{display:inline-block; vertical-align:middle}
+.color-sel .option{ display:inline-block; width:16px; height:16px; border:2px solid #fff; margin-right:1px; cursor:pointer;}
+.color-sel .selected{ border-color:#999}
+
+.abs-box { position:absolute; border:1px solid #7EB7E5; background-color:#AFD6F0; z-index:99; }
+#J_qnav_pannel  .close,.abs-box .close { color: #656565; cursor: pointer; font-weight: 700; position: absolute; right: 5px; top: 2px; }
+#J_qnav_pannel  .close:hover, .abs-box .close:hover { color:#000; text-decoration:none; }
+.abs-box .title { padding:10px; }
+.abs-box .ct { padding:0 10px; }
+.abs-box .line { margin:5px 0; clear:both; }
+#J_interface_set_pannel { width:250px; }
+#J_channel_set_pannel { width:480px; }
+#J_qnav_pannel{ width:100%;position:absolute;z-index:99; overflow:hidden;}
+#J_qnav_pannel .minsize{ border:1px solid #7EB7E5; border-bottom:0; background-color:#AFD6F0; width:100px; font-size:18px; font-weight:700; cursor:pointer; margin-left:10px; text-align:center; -webkit-border-radius: 5px 5px 0 0x ; -moz-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; }
+#J_qnav_pannel .minsize:hover{ color:#000;background-color:#89C6ED;}
+#J_qnav_pannel .maxsize{ border:1px solid #7EB7E5; background-color:#AFD6F0; position:relative; height:24px;}
+#J_qnav_pannel .maxsize .ct{ padding:3px 10px;}
+#J_qnav_pannel .maxsize .ct a{ font-size:12px; margin-right:1em; padding:2px; font-weight:700; color:#666; vertical-align:middle; display:inline-block;}
+#J_qnav_pannel .maxsize .ct .gotop{padding-right:18px; background:url(bgimg/fold.png) no-repeat right center;}
+#J_qnav_pannel .maxsize .ct a:hover{ background-color:#89C6ED; text-decoration:none; color:#000}
+#J_qnav_pannel .maxsize .ct button{ height:20px; line-height:18px; font-weight:700; margin-left:5px; width:80px;}
+.channel_set_pannel .ct { }
+.channel_set_pannel .channel { float:left; width:90px; overflow:hidden; margin:3px 0; }
+.channel_set_pannel .channel:hover { background-color:#90C6EA }
